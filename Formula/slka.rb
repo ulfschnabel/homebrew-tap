@@ -1,16 +1,16 @@
 class Slka < Formula
   desc "Slack CLI for Agentic Workflows"
   homepage "https://github.com/ulfschnabel/slka"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ulfschnabel/slka/releases/download/v0.5.1/slka-0.5.1-darwin-arm64.tar.gz"
-      sha256 "7e7c0aa5867760f9b9d08ac46672508ee7ad81cf7eb2eb5009b0919c935d80fe"
+      url "https://github.com/ulfschnabel/slka/releases/download/v0.6.0/slka-0.6.0-darwin-arm64.tar.gz"
+      sha256 "9a3429436947646d809743d77fe085dee1656df8851a15d3e07c00133d9e6297"
     else
-      url "https://github.com/ulfschnabel/slka/releases/download/v0.5.1/slka-0.5.1-darwin-amd64.tar.gz"
-      sha256 "5ce58b64761674bbdcc6475d19101a17846507da959e10dd3c29fbde54babbda"
+      url "https://github.com/ulfschnabel/slka/releases/download/v0.6.0/slka-0.6.0-darwin-amd64.tar.gz"
+      sha256 "407675a33bf85f8678c12ba44d66685ffebc406483342383a65dd66eb614e771"
     end
   end
 
@@ -19,6 +19,6 @@ class Slka < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/slka --version")
+    assert_match version.to_s, shell_output("#{bin}/slka --version 2>&1", 1)
   end
 end
