@@ -5,21 +5,21 @@
 class Dca < Formula
   desc "Discord CLI for Agents - Feature-complete Discord automation"
   homepage "https://github.com/ulfschnabel/dca"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ulfschnabel/dca/releases/download/v0.1.0/dca_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a7c04291c62fe0f069c6f3bb3ba78363feae4fd41d1117a9abd4d3e261020f03"
+      url "https://github.com/ulfschnabel/dca/releases/download/v0.2.0/dca_0.2.0_darwin_amd64.tar.gz"
+      sha256 "e281bcc7186407e0cfe7cfaca3a30c9c7b3e323c8765a11dd42d82c9e2b853be"
 
       def install
         bin.install "dca"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ulfschnabel/dca/releases/download/v0.1.0/dca_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1b9a9a06f7a2f4a2e462be5a8b548ec172c70b8209614403a7975debc5c85555"
+      url "https://github.com/ulfschnabel/dca/releases/download/v0.2.0/dca_0.2.0_darwin_arm64.tar.gz"
+      sha256 "ce23d909da1ec23e0b1c062606c09b878c427c29ae48a835ba25a5801834427f"
 
       def install
         bin.install "dca"
@@ -29,15 +29,15 @@ class Dca < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ulfschnabel/dca/releases/download/v0.1.0/dca_0.1.0_linux_amd64.tar.gz"
-      sha256 "c941e1aa03e54b8c3730df22a0dc153fb3907b50fc25ffb57e8b027a516082a2"
+      url "https://github.com/ulfschnabel/dca/releases/download/v0.2.0/dca_0.2.0_linux_amd64.tar.gz"
+      sha256 "44260d35d158f42de410f2de1e6213c847ac2825a1d8f7d6d84b9badbafd63b3"
       def install
         bin.install "dca"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ulfschnabel/dca/releases/download/v0.1.0/dca_0.1.0_linux_arm64.tar.gz"
-      sha256 "dcb601e9fec41ca25f1b1b8ddace8c3b892d38ed4a3f2dff7b3375795ecb25bd"
+      url "https://github.com/ulfschnabel/dca/releases/download/v0.2.0/dca_0.2.0_linux_arm64.tar.gz"
+      sha256 "726878817608aec408ac3bce1a82d7d64fbad54df8e9798e2b351142c1f5b1f5"
       def install
         bin.install "dca"
       end
