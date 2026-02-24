@@ -5,21 +5,21 @@
 class GagentCli < Formula
   desc "Google Workspace automation CLI for AI agents"
   homepage "https://github.com/ulfschnabel/gagent-cli"
-  version "0.4.2"
+  version "0.4.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ulfschnabel/gagent-cli/releases/download/v0.4.2/gagent-cli_0.4.2_Darwin_x86_64.tar.gz"
-      sha256 "961d96d90d8e6e3569657690cd0422c2765c7d3f74154ef5a884e0df9815b981"
+      url "https://github.com/ulfschnabel/gagent-cli/releases/download/v0.4.3/gagent-cli_0.4.3_Darwin_x86_64.tar.gz"
+      sha256 "93080cfdef300fb42ebd6a2bdaacc27af639458ab70fa2499a233dc457c1bd66"
 
       def install
         bin.install "gagent-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ulfschnabel/gagent-cli/releases/download/v0.4.2/gagent-cli_0.4.2_Darwin_arm64.tar.gz"
-      sha256 "7fb657d39735b706e3643498b0d50c8d6b7037318b23845f51ed215a2ec97d14"
+      url "https://github.com/ulfschnabel/gagent-cli/releases/download/v0.4.3/gagent-cli_0.4.3_Darwin_arm64.tar.gz"
+      sha256 "5630f986e64bde9311b0988ff26799526f592f35d4af0d0fb89a6d7c7a16974e"
 
       def install
         bin.install "gagent-cli"
@@ -29,15 +29,15 @@ class GagentCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ulfschnabel/gagent-cli/releases/download/v0.4.2/gagent-cli_0.4.2_Linux_x86_64.tar.gz"
-      sha256 "de77ffce2bb3f893efd15cb1646092d871502df282ce7ff13df36df7e9dc85c8"
+      url "https://github.com/ulfschnabel/gagent-cli/releases/download/v0.4.3/gagent-cli_0.4.3_Linux_x86_64.tar.gz"
+      sha256 "ec70099844e53c103165a7f0a92026586e8cb5614f2f672a1662988518cbd831"
       def install
         bin.install "gagent-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ulfschnabel/gagent-cli/releases/download/v0.4.2/gagent-cli_0.4.2_Linux_arm64.tar.gz"
-      sha256 "aea20f95397239883df1f2dc47a7cb4995c7a40c52e2c95516aa31e355f8e6c7"
+      url "https://github.com/ulfschnabel/gagent-cli/releases/download/v0.4.3/gagent-cli_0.4.3_Linux_arm64.tar.gz"
+      sha256 "f6654ed2e065cd953ad29b3c8e6ef2c213bd5fe94bf7ef97dd487876c14e3141"
       def install
         bin.install "gagent-cli"
       end
